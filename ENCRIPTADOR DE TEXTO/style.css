@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px; 
+    line-height: 1.5;
+}
+
+
+.logo {
+    padding-top: 10px; 
+    margin-left: 10px;
+    width: 20%; 
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px; 
+}
+
+
+.text-area {
+    border: none;
+    color: #0A3871;
+    margin-top: 20px;
+    text-transform: lowercase;
+    height: 150px; 
+    width: 100%; 
+}
+
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+
+.mensaje {
+    background: white;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%; 
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.botones {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.btn_desencriptar, .btn_encriptar, .copiar {
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 100%; 
+    max-width: 600px; 
+    text-align: center;
+    line-height: 67px; 
+}
+
+
+.btn_desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+
+.btn_encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    color: white;
+}
+
+
+.copiar {
+    border: 1px solid #0A3871;
+    background-color: white; 
+    margin-top: 20px; 
+    position: relative; 
+}
+
+
+.informacion {
+    color: #495057;
+    font-size: 1rem; 
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 30%;
+    }
+
+    .text-area {
+        height: 120px;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50%;
+    }
+
+    .text-area {
+        height: 100px;
+    }
+
+    .btn_desencriptar, .btn_encriptar, .copiar {
+        width: 100%; 
+    }
+
+    .copiar {
+        margin-top: 10px;
+    }
+}
